@@ -1,0 +1,29 @@
+{
+  "name": "object.detection4autopsy.server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcaceiro/object.detection4autopsy.server.git"
+  },
+  "keywords": [
+    "autopsy",
+    "node-yolo",
+    "yolov3",
+    "object",
+    "detection"
+  ],
+  "author": "Rúben Caceiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcaceiro/object.detection4autopsy.server/issues"
+  },
+  "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server#readme",
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  }
+}
