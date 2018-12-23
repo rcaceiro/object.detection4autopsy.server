@@ -26,10 +26,20 @@
   "bin": {
     "od4a": "od4a.js"
   },
-  "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server#readme",
+  "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server",
   "dependencies": {
-    "@vapi/node-yolo": "file:///Users/rcaceiro/SynologyDrive/IPLeiria/research_grant/node-yolo/vapi-node-yolo-2.0.0.tgz",
+    "@vapi/node-yolo": "^2.0.1",
     "multer": "^1.4.1",
     "polka": "^0.5.1"
-  }
+  },
+ "engines":{
+  "node":">=9"
+ },
+ "os":[
+  "darwin",
+  "linux"
+ ],
+ "cpu":[
+  "x64"
+ ]
 }
