@@ -1,0 +1,4 @@
+node_modules/
+files_to_classify/
+darknet_configs/
+.idea/
