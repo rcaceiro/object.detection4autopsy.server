@@ -42,7 +42,8 @@ port=80 od4a
 **Expects:** a image video**
 <br>**Gives on success:** 200 response code with a json string with detections
 <br>**Gives on error:** 400 response code with error message
-s
+
+#
 *Only support image extensions '.jpeg', '.jpe', '.jpg', '.jp2', '.tiff', '.tif', '.bmp', '.png', '.ppm', '.pgm', '.pbm', '.sr', '.ras', 'dib'
 
 **Only support video extensions '.3gp', '.3g2', '.asf', '.wma', '.wmv', '.avi', '.divx', '.evo', '.f4v', '.flv', '.mkv', '.mk3d', '.mka', '.mks', '.webm', '.mcf', '.mp4', '.mpg', '.mpeg', '.ts', '.m2p', '.ps', '.m2ts', '.mxf', '.ogg', '.rmvb', '.mov', '.qt', '.vob', '.ifo'
