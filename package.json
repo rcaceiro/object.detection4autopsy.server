@@ -1,45 +1,48 @@
 {
-  "name": "object.detection4autopsy.server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "postinstall": "mkdir files_to_classify && mkdir -p darknet_configs darknet_configs/cfg darknet_configs/data; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/coco.data -O darknet_configs/cfg/coco.data; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3-spp.cfg -O darknet_configs/cfg/yolov3-spp.cfg; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names -O darknet_configs/data/coco.names; wget -nc https://pjreddie.com/media/files/yolov3-spp.weights -O darknet_configs/yolov3-spp.weights; true"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rcaceiro/object.detection4autopsy.server.git"
-  },
-  "keywords": [
-    "autopsy",
-    "node-yolo",
-    "yolov3",
-    "object",
-    "detection"
-  ],
-  "author": "Rúben Caceiro",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rcaceiro/object.detection4autopsy.server/issues"
-  },
-  "bin": {
-    "od4a": "bin/cli.js"
-  },
-  "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server",
-  "dependencies": {
-    "@vapi/node-yolo": "^2.0.1",
-    "multer": "^1.4.1",
-    "polka": "^0.5.1"
-  },
- "engines":{
-  "node":">=9"
+ "name": "object.detection4autopsy.server",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+  "start": "node server.js",
+  "postinstall": "mkdir files_to_classify && mkdir -p darknet_configs darknet_configs/cfg darknet_configs/data; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/coco.data -O darknet_configs/cfg/coco.data; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3-spp.cfg -O darknet_configs/cfg/yolov3-spp.cfg; wget -nc https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names -O darknet_configs/data/coco.names; wget -nc https://pjreddie.com/media/files/yolov3-spp.weights -O darknet_configs/yolov3-spp.weights; true"
  },
- "os":[
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/rcaceiro/object.detection4autopsy.server.git"
+ },
+ "keywords": [
+  "autopsy",
+  "node-yolo",
+  "yolov3",
+  "object",
+  "detection"
+ ],
+ "author": "Rúben Caceiro",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/rcaceiro/object.detection4autopsy.server/issues"
+ },
+ "bin": {
+  "od4a": "bin/cli.js"
+ },
+ "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server",
+ "dependencies": {
+  "@vapi/node-yolo": "^2.0.1",
+  "multer": "^1.4.1",
+  "polka": "^0.5.1"
+ },
+ "engines": {
+  "node": ">=9"
+ },
+ "os": [
   "darwin",
   "linux"
  ],
- "cpu":[
+ "cpu": [
   "x64"
- ]
+ ],
+ "config": {
+  "port": "80"
+ }
 }

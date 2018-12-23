@@ -122,7 +122,7 @@ app.post('/process/video', video_receiver, (req, res) =>
               });
 });
 
-app.listen(80, (err) =>
+app.listen(process.env.npm_package_config_port, (err) =>
 {
  if(err)
  {
