@@ -4,13 +4,13 @@ const path = require('path');
 const fs = require('fs');
 const Yolo = require('@vapi/node-yolo');
 
-const yolo_detector = new Yolo('darknet_configs', 'cfg/coco.data', 'cfg/yolov3-spp.cfg', 'yolov3-spp.weights');
+const yolo_detector = new Yolo(__dirname + '/darknet_configs', 'cfg/coco.data', 'cfg/yolov3-spp.cfg', 'yolov3-spp.weights');
 
 const video_extensions = ['.3gp', '.3g2', '.asf', '.wma', '.wmv', '.avi', '.divx', '.evo', '.f4v', '.flv', '.mkv', '.mk3d', '.mka', '.mks', '.webm', '.mcf', '.mp4', '.mpg', '.mpeg', '.ts', '.m2p', '.ps', '.m2ts', '.mxf', '.ogg', '.rmvb', '.mov', '.qt', '.vob', '.ifo'];
 const image_extensions = ['.jpeg', '.jpe', '.jpg', '.jp2', '.tiff', '.tif', '.bmp', '.png', '.ppm', '.pgm', '.pbm', '.sr', '.ras', 'dib'];
 
 const storage_config = multer.diskStorage({
- destination: './files_to_classify/',
+ destination: __dirname + '/files_to_classify/',
  filename: function(req, file, cb)
  {
   cb(null, file.originalname + '-' + Date.now() + '-' + Math.floor(Math.random() * 1000000000000) + 1 + path.extname(file.originalname));
@@ -124,6 +124,7 @@ app.post('/process/video', video_receiver, (req, res) =>
 
 app.listen(80, (err) =>
 {
+ console.log(__dirname);
  if(err)
  {
   console.error(err);
