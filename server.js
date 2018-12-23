@@ -124,7 +124,6 @@ app.post('/process/video', video_receiver, (req, res) =>
 
 app.listen(80, (err) =>
 {
- console.log(__dirname);
  if(err)
  {
   console.error(err);
