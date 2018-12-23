@@ -3,4 +3,4 @@
 
 process.title = 'object.detection4autospy';
 
-require('./server.js');
+require('../server.js');
