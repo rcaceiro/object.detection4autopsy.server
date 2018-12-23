@@ -24,7 +24,7 @@
     "url": "https://github.com/rcaceiro/object.detection4autopsy.server/issues"
   },
   "bin": {
-    "od4a": "od4a.js"
+    "od4a": "cli.js"
   },
   "homepage": "https://github.com/rcaceiro/object.detection4autopsy.server",
   "dependencies": {
