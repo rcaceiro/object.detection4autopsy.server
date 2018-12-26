@@ -9,7 +9,7 @@ It is sponsored by [Instituto de Telecomunicações](https://www.it.pt) develope
 ### Minimum hardware requirements
 * Please get the minimum requirements from [node-yolo](https://github.com/rcaceiro/node-yolo) module 
 
-###Installation
+### Installation
 ```bash
 sudo npm install object.detection4autopsy.server -g --unsafe-perm
 ```
@@ -21,7 +21,7 @@ port=80 od4a
 
 **Note 1:** You can change port 80 to another that you want. 
 
-###Endpoints
+### Endpoints
 
 ```html
 /ping
