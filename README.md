@@ -44,6 +44,6 @@ port=80 od4a
 <br>**Gives on error:** 400 response code with error message
 
 #
-*Only support image extensions '.jpeg', '.jpe', '.jpg', '.jp2', '.tiff', '.tif', '.bmp', '.png', '.ppm', '.pgm', '.pbm', '.sr', '.ras', 'dib'
+*Only support image extensions .jpeg, .jpe, .jpg, .jp2, .tiff, .tif, .bmp, .png, .ppm, .pgm, .pbm, .sr, .ras, dib
 
-**Only support video extensions '.3gp', '.3g2', '.asf', '.wma', '.wmv', '.avi', '.divx', '.evo', '.f4v', '.flv', '.mkv', '.mk3d', '.mka', '.mks', '.webm', '.mcf', '.mp4', '.mpg', '.mpeg', '.ts', '.m2p', '.ps', '.m2ts', '.mxf', '.ogg', '.rmvb', '.mov', '.qt', '.vob', '.ifo'
+**Only support video extensions .3gp, .3g2, .asf, .wma, .wmv, .avi, .divx, .evo, .f4v, .flv, .mkv, .mk3d, .mka, .mks, .webm, .mcf, .mp4, .mpg, .mpeg, .ts, .m2p, .ps, .m2ts, .mxf, .ogg, .rmvb, .mov, .qt, .vob, .ifo
