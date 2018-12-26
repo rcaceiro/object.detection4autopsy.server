@@ -55,6 +55,7 @@ const app = polka({});
 
 app.get('/ping', (req, res) =>
 {
+ req.setTimeout(10);
  res.statusCode = 200;
  res.end();
 });
@@ -64,6 +65,7 @@ const video_receiver = file_video_receiver.single('file');
 
 app.post('/process/image', image_receiver, (req, res) =>
 {
+ req.setTimeout(0);
  if(!req.file)
  {
   res.statusCode = 415;
@@ -94,6 +96,7 @@ app.post('/process/image', image_receiver, (req, res) =>
 
 app.post('/process/video', video_receiver, (req, res) =>
 {
+ req.setTimeout(0);
  if(!req.file)
  {
   res.statusCode = 415;
