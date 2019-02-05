@@ -1,7 +1,9 @@
-const polka = require('polka');
-const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
+
+const polka = require('polka');
+const multer = require('multer');
 const Yolo = require('@vapi/node-yolo');
 
 const yolo_detector = new Yolo(__dirname + '/darknet_configs', 'cfg/coco.data', 'cfg/yolov3-spp.cfg', 'yolov3-spp.weights');
@@ -10,7 +12,7 @@ const video_extensions = ['.3gp', '.3g2', '.asf', '.wma', '.wmv', '.avi', '.divx
 const image_extensions = ['.jpeg', '.jpe', '.jpg', '.jp2', '.tiff', '.tif', '.bmp', '.png', '.ppm', '.pgm', '.pbm', '.sr', '.ras', 'dib'];
 
 const storage_config = multer.diskStorage({
- destination: __dirname + '/files_to_classify/',
+ destination: os.tmpdir() + '/object.detection4autopsy.server/',
  filename: function(req, file, cb)
  {
   cb(null, file.originalname + '-' + Date.now() + '-' + Math.floor(Math.random() * 1000000000000) + 1 + path.extname(file.originalname));
